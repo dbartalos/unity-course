@@ -10,6 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07980a29a882368a191de658b6ef0f7a, type: 3}
-  m_Name: Room 2
+  m_Name: A3
   m_EditorClassIdentifier: 
-  storyText: 
+  storyText: 'A3
+
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+    ac rutrum lorem. Phasellus semper magna finibus.
+
+
+    What should I do?
+
+    1.
+    A4
+
+    2. A5'
+  nextStates:
+  - {fileID: 11400000, guid: db0b7e6060ec8057791bd916e66d2931, type: 2}
+  - {fileID: 11400000, guid: 6ea17935506f2443d89a20e20cec907a, type: 2}
