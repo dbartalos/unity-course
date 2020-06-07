@@ -4,13 +4,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
+    private void Start() {
+        Screen.SetResolution(1024, 768, false);
+    }
     public void LoadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        SceneManager.LoadScene(currentSceneIndex + 1);        
     }
     public void LoadStartScene()
     {
         SceneManager.LoadScene(0);
+        FindObjectOfType<GameSession>().ResetGame();
+    }
+
+    public void QuitGame() {
+        Application.Quit();
     }  
 }
